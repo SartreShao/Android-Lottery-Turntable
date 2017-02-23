@@ -73,6 +73,7 @@ public class SuckMyDick extends View {
                 postInvalidate();
             }
         });
+
     }
 
     @Override
