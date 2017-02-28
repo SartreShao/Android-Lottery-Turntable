@@ -10,8 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="shaolizhi.mymusiclife.SurfaceViewActivity">
 
-    <shaolizhi.mymusiclife.MySurfaceView
+    <shaolizhi.mymusiclife.WheelOfFortune
+        android:id="@+id/wheelOfFortune"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:padding="2dp" />
 
+    <ImageView
+        android:background="@drawable/a"
+        android:id="@+id/imageButton"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true" />
 </RelativeLayout>
