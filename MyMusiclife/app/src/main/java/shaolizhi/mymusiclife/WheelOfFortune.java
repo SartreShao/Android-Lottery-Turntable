@@ -120,9 +120,7 @@ public class WheelOfFortune extends SurfaceView implements SurfaceHolder.Callbac
                  * 利用drawArc绘制五个颜色不同的扇形
                  * ——这五个扇形作为抽奖转盘中的五个区域，平分了整个原型
                  */
-                backgroundPaint.setColor(colorsOfGiftBackground[i]);
-                backgroundPaint.setStrokeWidth((float) 3.0);
-                backgroundPaint.setStyle(Paint.Style.STROKE);
+
                 canvas.drawArc(drawRange, tmpAngle, sweepAngle, true, backgroundPaint);
                 /**
                  * 绘制文本
@@ -225,11 +223,16 @@ public class WheelOfFortune extends SurfaceView implements SurfaceHolder.Callbac
         backgroundPaint.setAntiAlias(true);
         //设定是否使用图像抖动处理，会使绘制出来的图片更加平滑和饱满，图像更加清晰
         backgroundPaint.setDither(true);
+        backgroundPaint.setColor(Color.BLACK);
+        backgroundPaint.setStrokeWidth((float) 3.0);
+        backgroundPaint.setStyle(Paint.Style.STROKE);
 
         /**
          * 初始化绘制文字的画笔
          */
         textPaint = new Paint();
+        textPaint.setAntiAlias(true);
+        textPaint.setDither(true);
         textPaint.setColor(Color.BLACK);
         textPaint.setTextSize(textSize);
 
