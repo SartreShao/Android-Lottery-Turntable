@@ -70,14 +70,14 @@ public class WheelOfFortune extends SurfaceView implements SurfaceHolder.Callbac
         imageView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (a_speed<0){
+                if (a_speed < 0) {
                     //do-nothing
-                }else {
-                    if (speed == 0){
+                } else {
+                    if (speed == 0) {
                         //静止
                         speed = 8;
                         a_speed = 0;
-                    }else {
+                    } else {
                         //开始
                         a_speed = -0.05;
                     }
@@ -138,9 +138,9 @@ public class WheelOfFortune extends SurfaceView implements SurfaceHolder.Callbac
             }
             speed += a_speed;
             mStartAngle += speed;
-            if (speed<=0){
+            if (speed <= 0) {
                 speed = 0;
-                a_speed =0;
+                a_speed = 0;
             }
         }
         if (canvas != null) {
